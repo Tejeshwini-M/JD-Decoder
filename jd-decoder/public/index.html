@@ -3,32 +3,42 @@
 <head>
     <title>JD Decoder</title>
     <link rel="stylesheet" href="style.css">
+
+    <!-- PDF CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 </head>
 <body>
 
 <div class="container">
 
     <h1>🔍 JD Decoder</h1>
-    <p class="subtitle">Paste your job description and get skills instantly</p>
+    <p>Paste job description & get insights instantly</p>
 
     <textarea id="jdInput" placeholder="Paste Job Description here..."></textarea>
 
-    <button onclick="decodeJD()">✨ Decode</button>
+    <div class="buttons">
+        <button onclick="decodeJD()">✨ Decode</button>
+        <button onclick="toggleMode()">🌙 Mode</button>
+        <button onclick="copyResults()">📋 Copy</button>
+        <button onclick="downloadPDF()">📄 PDF</button>
+    </div>
 
     <div id="loading" class="hidden">⏳ Analyzing...</div>
 
-    <div class="results hidden" id="results">
+    <h2 id="levelBox"></h2>
 
+    <div id="skillsTags"></div>
+
+    <div class="results">
         <div class="card">
-            <h2>📌 Required Skills</h2>
+            <h2>📌 Skills</h2>
             <ul id="skillsList"></ul>
         </div>
 
         <div class="card">
-            <h2>🚀 Preparation Steps</h2>
+            <h2>🚀 Preparation</h2>
             <ul id="prepList"></ul>
         </div>
-
     </div>
 
 </div>
