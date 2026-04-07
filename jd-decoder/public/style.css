@@ -1,0 +1,105 @@
+body {
+    font-family: Arial;
+    text-align: center;
+    background: #f4f4f4;
+}
+
+textarea {
+    width: 60%;
+    height: 150px;
+    margin: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    background: blue;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+}
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    margin: 0;
+    color: white;
+}
+
+.container {
+    text-align: center;
+    padding: 30px;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+.subtitle {
+    opacity: 0.8;
+}
+
+textarea {
+    width: 60%;
+    height: 150px;
+    border-radius: 10px;
+    border: none;
+    padding: 15px;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+button {
+    margin-top: 20px;
+    padding: 12px 25px;
+    font-size: 16px;
+    border: none;
+    border-radius: 25px;
+    background: #ff7a18;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.1);
+    background: #ff512f;
+}
+
+.card {
+    background: rgba(255,255,255,0.15);
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 15px;
+    width: 60%;
+    backdrop-filter: blur(10px);
+    animation: fadeIn 1s ease;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background: rgba(255,255,255,0.2);
+    margin: 8px;
+    padding: 10px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+li:hover {
+    transform: translateX(10px);
+}
+
+.hidden {
+    display: none;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px);}
+    to { opacity: 1; transform: translateY(0);}
+}

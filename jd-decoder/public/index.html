@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JD Decoder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>🔍 JD Decoder</h1>
+    <p class="subtitle">Paste your job description and get skills instantly</p>
+
+    <textarea id="jdInput" placeholder="Paste Job Description here..."></textarea>
+
+    <button onclick="decodeJD()">✨ Decode</button>
+
+    <div id="loading" class="hidden">⏳ Analyzing...</div>
+
+    <div class="results hidden" id="results">
+
+        <div class="card">
+            <h2>📌 Required Skills</h2>
+            <ul id="skillsList"></ul>
+        </div>
+
+        <div class="card">
+            <h2>🚀 Preparation Steps</h2>
+            <ul id="prepList"></ul>
+        </div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
